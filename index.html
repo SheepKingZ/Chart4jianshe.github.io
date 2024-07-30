@@ -1,0 +1,169 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=mix-line-bar&code=PYBwLglsB2AEC8sDeAoWszGAG0iAXMmuhgE4QDmFApqYQOQCGAHhAM70A0x6L7ACsAjQwtQqhIkwATxDUGAY1LA2HbpPRKVbAMozs8ohpIKcwOrHoBiAJx36PEgF9HL9E_UYs2AEbBm4o4AZtSMYACupIYSGgAmYYwAahDUAO7isGwAFsDpZOHUnLBRjLEA8tDY0oRBjNhs1LAejugAtowUEAoAKrLRmTl5YKQFRTJyhADa9NjC1FyWPoyk9AC6TZ6SUWyYURnZuYTDBRstmYwAbtQAgmwAku00-4NHI41uzsTN6AY00LGBSTxMCMKb0ABMAAZoYAXPUAX3qAPujABSugAZ1QBG6YB7zwWEMhAEZIfDkeisUUcVDCajMVwcdDACgEUPxMMAeRqAf1TAOHO1IZkPpkPJrI5qy-nmY11YbCmjhiknGhnoCjC1Ao5mkXDOwNBsGmgH89QB7utjAI-2gGZ1bGAA-dAO622MA2vKARx1sYAcOUAecHYwC0crbSYADgz1nHogH0bQAXqdTAOEBgDC9NabEh8NiCYSiCxSjQyhjZUq5BzGD7uYirTzSUXsCWSePoROWC51Aqq4zQRitWWIykYgD0gBtFQDuGZWNK1hIRIeG2ixCLiAKzQ6F92Ax2hl7CEADMo97Z0jABlGD5qDOjMZYEFzO0wLGGEhpwUnJYzhnToWziX6Cf5uPq7WGPyO5Iu9Ae-P2gFYCPx5OpDToOi7GCua4boC267qQ-6HpYx7ltQZ4AKRphol4fNmxDEA05DUOKmqSmcT6ylCsL1sSb5SH0DBLCs46YDgeBQcY94AGJ7mE8FBOE0AKJAMCwAAFPeACUW7bsU1ARKQcD3rAADUliwG29AANxnJm6bjuqBbGAAbDYAAcs5DgAdAA7EOsBFAALOCRnGeZQ5FLiuKma5sAGWZNi9n-dkObi5ngl54KzjYQ42FZYWzpZjkuUUs7gpFznWW5NihbOiVnIKkjfCQRawKRDBchSVGMbRizLNRxbeCxkkaBxXEHmIO58QJUBwKJSESUVWwyZE8lIUpKlqZpUmXu4ukJPpxjubi4K4tFoVFAZll2X55mzkU5EjiFbl4jYBnOV5Nh2ZCyUxfZcX4olsAXZdln3XZlm4nZFlhZZEXRa5uWuOGRUlZYULkpRVKVRM1UMTe9UQAQjWSM1sHcW1vH8YJ3XiYjGhRLJw3YCcyn0Kp7YTduU1XnEs1EduuKzvOBm4kUG3gsZBm7cZll4ttnCLUtx33fill2NF6V_gZ4IOYlQ5DkZBlWZwQ7GSZkLXWZBl2c5q3_flgMkTWZGjjyjKvpDsqzNAD5nLmYp3P81C_szsPMfDrFNUhnEo61Fjo51Qk9YT1B9VpJB40NsAKcTsBoeT6YXjNIJTHFtmwHF9nM2nxn2eC9leXZmfzklvZ5c4-tVobpV4tyoMEmbN5VTMcy1bAtvsPbsSO4OjFwwj_WR57LU8R1mMidj_foOHckD0Ho0k7HoeUwVQI05MuIc7ANjF25ll8ztsDgrnB_Zwf_nhZwpfaSQWYoE46lAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/echarts.min.js"></script>
+  
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-graph-modularity extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-graph-modularity/2/files/dist/echarts-graph-modularity.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.1/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    option = {
+  tooltip: {
+    trigger: 'axis',
+    axisPointer: {
+      type: 'cross',
+      crossStyle: {
+        color: '#999'
+      }
+    }
+  },
+  toolbox: {
+    feature: {
+      dataView: { show: true, readOnly: false },
+      magicType: { show: true, type: ['line', 'bar'] },
+      restore: { show: true },
+      saveAsImage: { show: true }
+    }
+  },
+  legend: {
+    data: ['2000年建设用地面积', '2010年建设用地面积', '2020年建设用地面积','2000—2010年增长率','2010—2020年增长率']
+  },
+  xAxis: [
+    {
+      type: 'category',
+      data: ['广州', '深圳', '珠海', '佛山', '东莞', '中山', '惠州','江门','肇庆'],
+      axisPointer: {
+        type: 'shadow'
+      }
+    }
+  ],
+  yAxis: [
+    {
+      type: 'value',
+      name: '建设用地面积/公顷',
+      min: 0,
+      max: 150000,
+      interval: 30000,
+      axisLabel: {
+        formatter: '{value} '
+      }
+    },
+    {
+      type: 'value',
+      name: '增长率',
+      min: 0,
+      max: 50,
+      interval: 10,
+      axisLabel: {
+        formatter: '{value} %'
+      }
+    }
+  ],
+  
+  series: [
+    {
+      name: '2000年建设用地面积',
+      type: 'bar',
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' 公顷';
+        }
+      },
+      data: [
+       69835.75 , 42698.5, 11835, 63590, 54421.25, 23959.75, 23726.5, 32958.75, 19253.5,
+      ]
+    },
+    {
+      name: '2010年建设用地面积',
+      type: 'bar',
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' 公顷';
+        }
+      },
+      data: [
+        111219.25, 67490.3, 20050.2, 101968.5, 94032.75, 43710.5, 40037.5, 47145.5, 27399.5,
+      ]
+    },
+    {
+      name: '2020年建设用地面积',
+      type: 'bar',
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' 公顷';
+        }
+      },
+      data: [
+       133061, 74286, 28701.3,122196.5, 107999.75, 56242.5,55696.7,58980.75,35648.25,
+      ]
+    },
+    {
+      name: '2000—2010年增长率',
+      type: 'line',
+      yAxisIndex: 1,
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' %';
+        }
+      },
+      data: [37 , 37, 41, 38, 42, 45, 41, 30, 30,]
+    },
+    {
+      name: '2010—2020年增长率',
+      type: 'line',
+      yAxisIndex: 1,
+      tooltip: {
+        valueFormatter: function (value) {
+          return value + ' %';
+        }
+      },
+      data: [16, 9, 30, 17,13, 22, 28, 20, 23,]
+    }
+    
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
